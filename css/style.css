@@ -57,9 +57,11 @@ table {
 html {
     font-size: 62.5%;
     font-family: 'Lato';
+    margin: auto;
   }
 body{
-    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png)
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+    
 }
 
 /* -----------------------> Navigation style */
@@ -160,7 +162,7 @@ nav a:hover {
 
 .main_content h2{
   font-family: 'Permanent Marker', cursive;
-  color:rgb(13, 0, 70);
+  color:#0d0445;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 9.375rem;
@@ -196,6 +198,15 @@ nav a:hover {
 
 /* -----------------------> Read more section*/
 
+.read_more{
+    display: flex;
+    flex-direction: column;
+}
+
+.read_more hr{
+    width: 100%;
+   border: rgb(192, 192, 192) solid .01rem; 
+}
 .read_more .outer_div{
     width: 70%;
     margin: 3rem auto;
@@ -265,34 +276,28 @@ nav a:hover {
 .gallery {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     background: linear-gradient(90deg, #132075 0%, #ff922d 100%);
-    display: flex;
     align-items: center;
-    padding: 5rem;
-
-    
-    
+    padding: 5rem;    
 }
-.gallery div{
+
+.gallery .cards{
     min-height: 18.75rem;
-    width: 350px;
+    width: 22rem;
     background-color: white;
-    border-radius: 10px;
+    /* border-radius: 0.625rem; */
     box-shadow: 0 8px 30px rgba(0,0,0,.3);
     display: flex;
     flex-flow: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 .gallery h3{
     font-family: 'Bubblegum Sans', cursive;
     color:black;
-    position: relative;
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%, 100%);
+    margin: 2rem auto 0;
+    justify-content: center;
     font-size:1.8rem;
     font-weight: 600;
 }
@@ -301,17 +306,17 @@ nav a:hover {
     padding: 2.2em;
     line-height: 1.7em;
     position: relative;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .gallery img {
     background-color:tomato;
-    height: 120px;
-    width: 120px;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     border: 5px solid white;
     top: -50%;
     left: 50%;
-    transform: translateX(70%);
+    transform: translateX(20%);
     display:flex;
     justify-content:center;
 }
@@ -320,7 +325,7 @@ nav a:hover {
     background: linear-gradient(90deg, #1a2B96 0%, #e0b90c 100%);
     background-image: url('../pics/paris.jpg');
     background-size: cover;
-    height: 50px;
+    height: 17rem;
     padding: 1rem 0;
 
     
@@ -330,8 +335,8 @@ nav a:hover {
     background: linear-gradient(90deg, #1a2B96 0%, #e69122 100%);
     background-image: url('../pics/amsterdam.jpg');
     background-size: cover;
-    height: 50px;
-    padding: 2rem 0;
+    height: 17rem;
+    padding: 1rem 0;
 
     
   }
@@ -339,30 +344,12 @@ nav a:hover {
   .footer_card3 {
     background-image: url('../pics/sydney.jpg');
     background-size: cover;
-    height: 3.125rem;
+    height: 17rem;
     padding: 1rem 0;
 
     
   }
 
-  .quote{
-    font-size: 7rem;
-    float: left;
-    opacity: .5;
-    transform: rotate(10deg) translate(35px, 35px);
-   color:#000000;
-   margin-top: 0;
-  }
-  
-  .quote2{
-    font-size: 5rem;
-    float: right;
-    opacity: .5;
-    transform: rotate(10deg) translate(190px, -80px);
-   color:#000000;
-   margin: 0;
-  }
-  
   
 
 
@@ -403,4 +390,87 @@ footer p{
     color: black;
     text-align: center;
     padding-bottom: .5rem;
+}
+
+
+/* Media queries */
+@media (max-width: 800px){
+
+    .main_content p{
+        line-height: 3rem;
+        width: 80%;
+    }
+    .gallery {
+     
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background: linear-gradient(90deg, #132075 0%, #ff922d 100%);
+            align-items: center;
+            padding: 5rem;   
+    }
+    .gallery .cards{
+        min-height: 18.75rem;
+        width: 90%;
+        background-color: white;
+        /* border-radius: 0.625rem; */
+        box-shadow: 0 8px 30px rgba(0,0,0,.3);
+        display: flex;
+        flex-flow: column;
+        justify-content:space-evenly;
+        margin: 1rem auto;
+        border-bottom: 1rem solid white;
+    }
+
+    .read_more .outer_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .read_more .read_more_image{
+        order: 2;
+        margin: 0;
+    }
+    .read_more p{
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px){
+
+    .top_content{
+        justify-content: space-around;
+    }
+    .top_content h1{
+        display: none;
+    }
+    .top_content nav{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .main_content h2, .main_content p  {
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+      }
+    .main_content img{
+        display: none;
+    }
+
+    .read_more .outer_div{
+        background: none;
+        color: rgb(13, 0, 70);
+    }
+
+    .read_more .insider_div{
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
