@@ -139,14 +139,14 @@ body{
   
   /*highlight*/
   .top_content nav .effect01:after {
-    background: #FFF;
+    background: #d4a218;
     border: 0px solid #0d0046;
     content: "";
-    height: 155px;
-    left: -75px;
+    height: 9.6875rem;
+    left: -4.6875rem;
     opacity: .8;
     position: absolute;
-    top: -50px;
+    top: -3.125rem;
     -webkit-transform: rotate(35deg);
             transform: rotate(35deg);
     width: 50px;
@@ -155,7 +155,7 @@ body{
   }
   .top_content nav .effect01:hover:after {
     background: #FFF;
-    border: 20px solid #0d0046;
+    border: 1.25rem solid #0d0046;
     opacity: 0;
     left: 120%;
     -webkit-transform: rotate(40deg);

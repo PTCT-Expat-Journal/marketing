@@ -1,3 +1,9 @@
+  
+  .gallery h2{
+      font-size: 3rem;
+      font-family: 'Permanent Marker', cursive;
+      text-transform: uppercase;
+  }
   .team_cards{
       display: flex;
       flex-direction: row;
@@ -10,12 +16,11 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
-    background-image:
-    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-    linear-gradient(#eee .1em, transparent .1em);
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
     background-size: 100% 1.2em;
     align-items: center;
-    padding: 5rem;    
+    padding: 5rem;
+    margin: auto;    
 }
 
 .gallery .cards{
@@ -56,6 +61,15 @@
     transform: none;
 }
 
+.gallery a{
+    margin: auto;
+    margin-bottom: 1rem;
+    color: #0d0046;
+}
+
+a:visited {
+    color: #d4a218;
+  }
 
   /* Media queries */
 @media (max-width: 500px){
