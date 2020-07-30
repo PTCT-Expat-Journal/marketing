@@ -52,7 +52,6 @@
 
 
 .gallery img {
-    background-color:tomato;
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
@@ -69,6 +68,10 @@
 
 a:visited {
     color: #d4a218;
+  }
+
+  footer nav a:visited{
+    color: #0d0046;
   }
 
   /* Media queries */
