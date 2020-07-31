@@ -68,12 +68,13 @@
     margin: auto;
     margin-bottom: 1rem;
     color: #0d0046;
+    text-decoration: none;
 }
 
 
 
 a:visited {
-    color: #d4a218;
+    color: #916b05;
   }
 
   footer nav a:visited{
