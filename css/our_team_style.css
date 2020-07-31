@@ -3,6 +3,7 @@
       font-size: 3rem;
       font-family: 'Permanent Marker', cursive;
       text-transform: uppercase;
+      margin-bottom: 2rem;;
   }
   .team_cards{
       display: flex;
@@ -49,10 +50,13 @@
     margin: 2rem;
 }
 
+.gallery p {
+    font-size: 1.5rem;
+}
+
 
 
 .gallery img {
-    background-color:tomato;
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
@@ -65,10 +69,17 @@
     margin: auto;
     margin-bottom: 1rem;
     color: #0d0046;
+    text-decoration: none;
 }
 
+
+
 a:visited {
-    color: #d4a218;
+    color: #916b05;
+  }
+
+  footer nav a:visited{
+    color: #0d0046;
   }
 
   /* Media queries */
