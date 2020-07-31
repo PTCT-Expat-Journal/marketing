@@ -3,6 +3,7 @@
       font-size: 3rem;
       font-family: 'Permanent Marker', cursive;
       text-transform: uppercase;
+      margin-bottom: 2rem;;
   }
   .team_cards{
       display: flex;
