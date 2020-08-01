@@ -91,5 +91,12 @@ a:visited {
 }
 .gallery .cards{
     width: 100%;
+    margin-left: 0em;
 }
+}
+
+@media (max-width: 415px){
+    .gallery h2 i{
+        display: none;
+    }
 }
